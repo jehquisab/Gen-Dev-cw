@@ -1,0 +1,40 @@
+Business description: 
+The business we are choosing to model is “Ticketmaster”.
+
+The stakeholders involved with this business are: customers, performing artists, event organisers, site admins and venue staff.
+The business entities for Ticketmaster: Ticket, Event, Customer, Admin, User (both Customer and Admin are from User), Venue, Discount and Payment. 
+
+A use case for Payment would be collecting card details for payment.
+The action associated with this use case could be inputting valid (16 digit) card number details to buy a ticket.
+A use case for Event would be using an unique identifier for each event. 
+The action associated with this could be an admin assigning a unique EventID(int)  for the Event. 
+A use case for Discount would be event organisers making a discount available for only certain customers or redeems.
+This action could be demonstrated by a Discount being available for a certain number of customers, or its status being False (invalid) or True(valid).
+  
+Invariant description:
+Invariant 1: Ticket prices must be in the set of natural numbers (non negative), context <Ticket>
+Purpose of the invariant: To prevent faulty ticket prices and errors at checkout
+Satisfies instance:[17.99, 8.99, 200.00]
+Fails instance:[-17.99, 8.99, 200.00]
+
+Invariant 2: TicketID must be unique
+Purpose of the invariant: To prevent overselling of tickets
+Satisfies instance: List of TicketID: [122, 123, 124]
+Fails instance: List of TicketID: [122, 122, 123]
+
+Invariant 3: A venueID must exist for an event to be held there, and venueID must be unique
+Purpose of the invariant: Prevent events being sold at not real venues, and duplicate tickets
+Satisfies instance: Parent Venue VenueID= 5, Child Event VenueID=5
+Fails instance: Parent Venue VenueID=5, Child Event VenueID= 99 (this venue does not exist)
+
+Critical evaluation of generative development techniques:
+Generative development can be defined as an approach to software development where parts, or even the entirety of a project 
+are automatically generated using techniques such as artificial intelligence (AI) code generation, for instance. 
+There are advantages and disadvantages to taking this approach, of course. In Group 34’s case, utilising EMF for our 
+coursework allowed us to automate what would have been an otherwise tedious task; it allowed for our time and effort 
+to be distributed elsewhere. However, we needed to be extremely careful with the result and had to comb through it 
+to ensure correctness.  
+
+As technology advances, the use of AI to develop software is increasing and there is no doubt that there are justified concerns regarding how ethical it all is. 
+There are obvious benefits to developers as stated in the class Padlet, it “…automates repetitive tasks, boosts productivity...” but it creates a “…dependence on AI [and] reduces our problem-solving skills”. 
+A decent developer should be able to create a functional solution from scratch, without that skill the need for humans to be a part of software development ceases to exist. 

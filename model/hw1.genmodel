@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/gendev.hw1/src-gen" creationIcons="false" editDirectory="/gendev.hw1.edit/src-gen"
+    editorDirectory="/gendev.hw1.editor/src-gen" modelPluginID="gendev.hw1" modelName="Hw1"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>hw1.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Hw1" basePackage="gendev" disposableProviderFactory="true"
+      ecorePackage="hw1.ecore#/">
+    <genClasses ecoreClass="hw1.ecore#//Admin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Admin/AdminID"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Customer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Customer/cardNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hw1.ecore#//Customer/tickets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hw1.ecore#//Customer/payments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hw1.ecore#//Customer/discounts"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Discount">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Discount/discountID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Discount/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Discount/isActive"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Payment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Payment/bookingID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Payment/paymentType"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Ticket">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/ticketID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/venueID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/sold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/eventID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Ticket/userID"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hw1.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//User/userName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//User/userID"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Event/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Event/venueID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Event/eventID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hw1.ecore#//Event/ticketsforevents"/>
+    </genClasses>
+    <genClasses ecoreClass="hw1.ecore#//Venue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Venue/venueID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Venue/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Venue/capacity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hw1.ecore#//Venue/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hw1.ecore#//Venue/events"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

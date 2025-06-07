@@ -1,0 +1,33 @@
+Percentage of contribution:
+Member 1:  33.3%
+Member 2:  33.3%
+Member 3:  33.3% (leave blank, or remove if working as a pair).
+
+Explain contribution in words here.
+
+Task1a (Stakeholders, use cases etc) was originally completed by Dagogo. This base was used by Vaishali who put this into text and changed the use cases to match the model and put into the description txt file.
+Task1b (invariants) was completed by Vaishali.
+Task1c (Ethics of Generative Development) was completed by Jehquisa.
+
+Task 2a (Use case diagram) was completed by Dagogo. 
+Task 2b (Activity Diagram) was originally drawn up by Vaishali, Jehquisa then put this into draw.io and made some adjustments. Vaishali then finalised this and uploaded to the folder.
+
+Task3a (UML diagram) was completed by Dagogo, Jehquisa. Dagogo and Jehquisa brainstormed ideas and made the original classes, Vaishali then added data structures to this. Jehquisa then added connections between the classes.
+Task3b (OCL invariants) was completed by Vaishali.
+
+Task4a (Instances with Java code) was implemented by Dagogo and Jehquisa.
+Task4b (Invariant instances) was implemented by Vaishali
+
+Explain the use of AI tools here. This should be a detailed and clear description. Any general statements made here should be expanded - for example, avoid things like "AI used for structure" or "AI used for initial ideas" - both need a lot more information (e.g. what structure specifically, what initial ideas did it suggest, which prompts did you use and which parts of answers did you use, etc.
+
+We used ChatGPT to explain what the different relationships meant (reference, bi-directional reference and composition)
+because we were unsure if we were using the right one for our class diagram. At first we were using bi-directional but 
+after we had a discussion and looked at the labs, it wasn't adding up. The prompt we used was: "Explain in detail what reference, 
+bi-directional reference and composition in the context of EMF modelling and tell me which one would be best for a model of a event 
+ticket seller.". We used the part of the answer that explained what a composition relation was as it applied to our project.
+
+At the start of the assignment, AI was initially used to gain a breakdown of the assignment. We use it to assign the work into clear, 
+doable steps. This was done by: Summarizing each task requirement in simpler terms and going over some familiar terms in more detail 
+e.g., invariants. It also aided in helping fix some issues in eclipse i.e., some problems that arose when changing working systems 
+(moving from computer to computer). A.I. helped in quickly reading through the assignment document and therefore shortened the time 
+it would have otherwise taken to understand the instructions.

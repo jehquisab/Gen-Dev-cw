@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hw1="http://www.example.org/hw1">
+  <hw1:Customer userName="testuser1" userID="1" cardNumber="122223432">
+    <tickets ticketID="1000" venueID="2000" sold="true" eventID="100" price="150.0" userID="1"/>
+    <payments bookingID="700" paymentType="Mastercard Debit"/>
+    <discounts discountID="9000" name="15OFF" isActive="true"/>
+  </hw1:Customer>
+  <hw1:Venue venueID="2000" name="O2 London" capacity="300" location="London">
+    <events name="bob marley resurrected" venueID="2000" eventID="100"/>
+  </hw1:Venue>
+  <hw1:Venue venueID="2001" name="Birms Arena" capacity="300" location="Birmingham">
+    <events name="justin bieber europe" venueID="2000" eventID="101"/>
+  </hw1:Venue>
+</xmi:XMI>
